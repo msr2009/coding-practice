@@ -12,6 +12,8 @@ need to be able to do a couple things:
 		
 		seq_name	dna_mutation	pro_mutation
 		GAL4	A4T	K2*
+		...
+		0.0454774502394 (361/7938)
 
 Notes:
 
