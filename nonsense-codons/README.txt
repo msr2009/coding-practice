@@ -12,11 +12,13 @@ need to be able to do a couple things:
 		
 		seq_name	dna_mutation	pro_mutation
 		GAL4	A4T	K2*
+		...
+		0.0454774502394 (361/7938)
 
 Notes:
 
 a) reading a FASTA file isn't exactly a trivial task, so I usually use someone 
-   else's code for it. I've added a python script, parse_fasta.py, which 
+   else's code for it. I've added a python script, fasta_iter.py, which 
    contains the relevant function (as written by brent_p, who's currently a 
    member of Aaron Quinlan's lab at the University of Utah). Using biopython 
    or bioperl would be a perfect solution to this problem, as they have their 
@@ -26,3 +28,6 @@ b) For output, you'll need to translate the DNA sequence to a protein sequence
    -- what's the best way to store the codon table?
 
 c) Don't count wildtype stop codons in the sequence in your calculation.
+
+d) How many possible nonsense codons are there in the entire yeast proteome? 
+   You can use orf_coding_all.fa to perform this calculation.
